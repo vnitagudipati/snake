@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="info">
+    <div>
+      <label for="username">Enter Username: </label>
+      <input type="text" id="username" value="Player">
+    </div>
+    <h2 id="displayName">Username: Player</h2>
+    <p id="score">Score: 0</p>
+    <p id="highScore">High Score: 0</p>
+  </div>
+  
+  <div id="buttons">
+    <button id="startButton">Start Game</button>
+    <button id="playAgainButton" style="display: none;">Play Again</button>
+    <button id="pauseButton" style="display: none;">Pause</button>
+    <button id="resumeButton" style="display: none;">Resume</button>
+  </div>
+
+  <canvas width="400" height="400" id="game" style="display:none;"></canvas>
+  
+  <script src="snake.js"></script>
+</body>
+</html>
